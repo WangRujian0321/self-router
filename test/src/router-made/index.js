@@ -14,7 +14,7 @@ function createWebHistory() {
     return {
         binEvents,
         type: 'History',
-        url: ()=> window.history.state?window.history.state.url:'/404',
+        url: ()=> window.history.state?window.history.state.url:'/',
     }
 }
 function createWebHashHistory(){
